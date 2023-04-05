@@ -15,7 +15,8 @@ function Work() {
         src={CAMPUS_image}
         onLoad={() => setImageLoaded(true)}
         style={{
-          width: '100%',
+          minWidth: '100%',
+          minHeight: '100%',
           position: 'fixed',
           left: '50%',
           top: '50%',
