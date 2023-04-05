@@ -1,14 +1,19 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import CAMPUS_image from '../assets/CAMPUS_image.jpeg'
 
 function Work() {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: imageLoaded ? 1 : 0 }}
+      transition={{ duration: 0.5 }}
       exit={{ opacity: 0 }}>
       <img
         src={CAMPUS_image}
+        onLoad={() => setImageLoaded(true)}
         style={{
           width: '100%',
           position: 'fixed',
