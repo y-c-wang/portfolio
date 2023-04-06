@@ -29,17 +29,8 @@ function Navbar() {
 
   return (
     <div>
-      <div style={{
-        position: 'fixed',
-        zIndex: '100',
-        top: '40px',
-        left: '40px'
-      }}>
-        <ul style={{
-          listStyleType: 'none',
-          padding: '0',
-          margin: '0'
-          }}>
+      <nav>
+        <ul>
           {
             pages.map((page) => (
               <li key={page.link}>
@@ -52,7 +43,7 @@ function Navbar() {
             ))
           }
         </ul>
-      </div>
+      </nav>
       <Outlet />
     </div>
   )
