@@ -28,9 +28,10 @@ function Home() {
       <div>
         <h2>
           Hi, I am Johnson Wang,
-          <br />
-          An intern in HPE & a student in NYCU
         </h2>
+        <h3>
+          An intern in HPE & a student in NYCU
+        </h3>
       </div>
     </motion.div>
   )

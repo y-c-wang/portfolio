@@ -1,9 +1,10 @@
 nav {
   position: fixed;
   z-index: 100;
-  top: 40px;
-  right: 40px;
   text-align: right;
+  top: 1rem;
+  right: 2rem;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -15,6 +16,57 @@ ul {
 .Selected {
   color: #ffc964
 }
+
 .Default {
   color: #ffc9649e
+}
+
+.display-icon {
+  display: none;
+  margin: 0.4rem;
+}
+
+.display-title {
+  display: none;
+}
+
+/* Styles for portrait phones */
+@media only screen and (max-width: 479px) {
+  nav {
+    right: 1rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .display-icon {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .display-title {
+    display: block;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .display-title {
+    display: block;
+  }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .display-title {
+    display: block;
+  }
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1200px) {
+  .display-title {
+    display: block;
+  }
 }

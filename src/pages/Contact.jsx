@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Contact_image from '../assets/Contact_image.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
@@ -55,7 +55,7 @@ function Contact() {
         }}>
           {icons.map(
             (icon) => (
-              <a href={icon.link} class='icon-block'>
+              <a key={icon.link} href={icon.link} className='icon-block'>
                 <FontAwesomeIcon icon={icon.fa} size='3x' />
               </a>
             )

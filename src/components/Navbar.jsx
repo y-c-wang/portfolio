@@ -1,24 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBriefcase, faComments, faFlask, faHouse } from '@fortawesome/free-solid-svg-icons'
 import './Navbar.css'
 
 function Navbar() {
   const pages = [
     {
       link: '/',
-      title: 'Home'
+      title: 'Home',
+      icon: faHouse
     },
     {
       link: '/work',
-      title: 'Work'
+      title: 'Work',
+      icon: faBriefcase
     },
     {
       link: '/research',
-      title: 'Research'
+      title: 'Research',
+      icon: faFlask
     },
     {
       link: '/contact',
-      title: 'Contact'
+      title: 'Contact',
+      icon: faComments
     },
   ]
   const location = useLocation()
@@ -37,7 +43,13 @@ function Navbar() {
                 <Link
                   to={page.link}
                   className={url === page.link ? 'Selected' : 'Default'}>
-                  {page.title}
+                  <span className='display-title'>
+                    {page.title}
+                  </span>
+                  <FontAwesomeIcon
+                    className='display-icon'
+                    icon={page.icon}
+                    size='lg'/>
                 </Link>
               </li>
             ))
