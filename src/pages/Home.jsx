@@ -31,7 +31,7 @@ function Home() {
           Hi, I am Johnson Wang,
         </h2>
         <h3>
-          An intern in HPE & a student in NYCU
+          An intern in Microsoft & a student in NYCU
         </h3>
       </div>
     </motion.div>

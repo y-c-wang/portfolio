@@ -30,7 +30,7 @@ function Work() {
         My Software Engineering Internship @ HPE
       </h2>
       <p>
-        As an intern at HPE, I find the process of learning new technologies
+        As an intern at HPE, I found the process of learning new technologies
         and tools enjoyable. Designing and developing features for internal
         websites has given me the chance to explore web development tools.
         While setting up CICD for deployment environments, I gained valuable
